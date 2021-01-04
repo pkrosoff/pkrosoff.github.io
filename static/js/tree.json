@@ -1,0 +1,55 @@
+{
+    "name":"About Phoebe",
+        "children":
+            [{"name": "Work Experience",
+                "children":
+                    [{"name": "Restuarants",
+                        "children":
+                            [{"name":"The Horseshoe Bar and Grill"},
+                            {"name":"Shuksan Clubhouse"},
+                            {"name":"Sunee Thai and Lao"},
+                            {"name":"Han Oak"},
+                            {"name":"The Sitzmark Bar and Grill"},
+                            {"name":"Famous Dave's BBQ"},
+                            {"name":"The Allison Inn and Spa"},
+                            {"name":"Keenan's at the Pier"},
+                            {"name":"Mt. Baker Ski Area"}]
+                    }]
+            },
+            {"name":"Education",
+                "children": [
+                    {"name":"BS ESCI",
+                        "children": 
+                            [{"name": "Statistics"},
+                            {"name": "Chemistry"},
+                            {"name": "Energy"},
+                            {"name": "Ecology"}]
+                    },
+                    {"name":"Coding",
+                        "children":[
+                            {"name":"Databases",
+                                "children":
+                                    [{"name":"SQL"},
+                                    {"name":"MongoDB"},
+                                    {"name":"AWS"}]
+                            },
+                            {"name":"Languages",
+                                "children":
+                                    [{"name":"Python"},
+                                    {"name":"Javascript"},
+                                    {"name":"R"},
+                                    {"name":"HTML/CSS"}]
+                            },
+                            {"name":"Projects",
+                                "children":
+                                    [{"name":"National Parks Project"},
+                                    {"name":"Wine Machine Learning"},
+                                    {"name":"NBA Final Scores"},
+                                    {"name":"Chasing Waterfalls"},
+                                    {"name":"Save Chehalem Mountain"}]
+                            }
+                ]}
+                ]
+            }]
+}
+                    

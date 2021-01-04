@@ -2,59 +2,108 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>Phoebe Rosoff's Portlfolio</title>
 
 </head>
-
+<!-- header menu from https://www.w3schools.com/w3css/w3css_navigation.asp -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="static/css/style.css">
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script type="text/javascript" src="/static/js/tree.js"></script>	
 <body>
-  <h1>Phoebe Kate Rosoff</h1>
-  <h3>Breakfast for dinner</h3>
-  <img src="0809181202s copy.jpg" alt="Ravioli winking in the grass" width="500" height="350"/>
-  <br>
-  <h3 style=font-size: 30ox;>Contact me:</h3>
-  <ul>
-  <li><a href="https://www.facebook.com/phoebe.kate.545" target="_blank">Facebook</a></li>
-  
-  <li><a href="https://www.linkedin.com/in/phoebe-rosoff-9392b1140/" target="_blank">LinkedIn</a></li>
-  
-  <li><a href="https://github.com/pkrosoff" target="_blank">GitHub</a></li>
-  
-  <li><strong><a href="https://www.instagram.com/pheebreezy/?hl=en" target="_blank">Instagram</a></strong></li>
-  
-  <li><a href="mailto: pkrosoff@gmail.com" target="_blank">Send Email</a></li>
-</ul>
-<p>Hello! My name is Phoebe, and I am a bartender, homesteader, and house plant enthusiast.</p>
+  <div class="w3-bar w3-black">
+    <a href="#" class="w3-bar-item w3-button w3-mobile w3-green">Home</a>
 
-<p>I am currently on a new journey to learn how to code and work with data.</p>
-<table style="width:40%">
-  <tr>
-    <th>Hobbies</th>
-    <th>Favorite Movies</th>
-    <th>Skills</th>
-  </tr>
-  <tr>
-    <td>Photography</td>
-    <td>Catch Me If You Can</td>
-    <td>Crocheting</td>
-  </tr>
-  <tr>
-    <td>Gardening</td>
-    <td>Oldboy</td>
-    <td>Snowboarding</td>
-  </tr>
-  <tr>
-    <td>Baking</td>
-    <td>The Emperor's New Groove</td>
-    <td>Drinking Tea</td>
-  </tr>
-  <tr>
-    <td>Exercising</td>
-    <td>Back to the Future</td>
-    <td>Data Analysis</td>
-  </tr>
-</table>
+    <div class="w3-dropdown-hover w3-mobile">
+      <button class="w3-button"> Python <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="https://oregon.bootcampcontent.com/pkrosoff/pandas-challenge/-/blob/master/HeroesOfPymoli_starter.ipynb" class="w3-bar-item w3-button w3-mobile">Pandas</a>
+        <a href="https://oregon.bootcampcontent.com/pkrosoff/matplotlib_challenge/-/blob/master/pymaceuticals_starter.ipynb" class="w3-bar-item w3-button w3-mobile">Matplotlib</a>
+        <a href="https://pkrosoff.github.io/Web-Design-Challenge/index.html" class="w3-bar-item w3-button w3-mobile">APIs</a>
+        <a href="https://github.com/pkrosoff/web-scraping-challenge" class="w3-bar-item w3-button w3-mobile">Web Scraping</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-mobile">
+      <button class="w3-button"> JavaScript <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="https://pkrosoff.github.io/D3-Challenge/" class="w3-bar-item w3-button w3-mobile">D3</a>
+        <a href="http://nationalparksproject.herokuapp.com" class="w3-bar-item w3-button w3-mobile">Leaflet</a>
+        <a href="https://pkrosoff.github.io/plotlyChallenge/" class="w3-bar-item w3-button w3-mobile">Plotly</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-mobile">
+      <button class="w3-button"> Databases <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="https://github.com/pkrosoff/ETL_project_Code_Warriors" class="w3-bar-item w3-button w3-mobile">SQL</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">MongoDB</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-mobile">
+      <button class="w3-button"> Projects <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="https://github.com/hedeencharles/group_project01" class="w3-bar-item w3-button w3-mobile">University Enrollment/Tuition Project</a>
+        <a href="http://nationalparksproject.herokuapp.com" class="w3-bar-item w3-button w3-mobile">National Parks Project</a>
+        <a href="https://pkrosoff.github.io/wine_machine_learning/" class="w3-bar-item w3-button w3-mobile">Wine Machine Learning Project</a>
+        <a href="https://savechehalemmountain.com/" class="w3-bar-item w3-button w3-mobile">Save Chehalem Mountain</a>
+      </div>
+    </div>
+    <a href="#" class="w3-bar-item w3-button w3-mobile w3-right w3-green">Resume</a>
+  </div>
+<!--  -->
+<div id="header-pk">
+  <h1>Phoebe Kate Rosoff</h1>
+  <h3>Breakfast for Dinner</h3>
+</div>
+<div  id="body-pk">
+  <!-- <img src="0809181202s copy.jpg" alt="Ravioli winking in the grass" width="500" height="350"/> -->
+<p id="par">
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  Hello! My name is Phoebe, and I am a bartender, homesteader, web developer, and house plant enthusiast.
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  I am currently on the journey of learning how to code and work with data. I particularly enjoy Python and Database Management. I recently completed a 24-week intensive course on data analytics and visualization. I would like to use these skills in combination with my degree in Environmental Science to improve the overall wellbeing of the planet and its inhabitants in some way.
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  I am a skilled communicator and multitasker. I learned these traits after more than a decade working in the hospitality industry. I can convey information verbally and am a strong writer. If you would like to see some examples of my coding proficiency, click the menu links for display versions of my homework assignments, or visit my project pages or GitHub account. Thank you for stopping by!
+
+
+</p>
+<div class="grid-container">
+  <div><strong>Hobbies</strong></div>
+  <div><strong>Skills</strong></div>
+  <div><strong>Fun Facts</strong></div>  
+  <div>Photography</div>
+  <div>Parallel Parking</div>
+  <div>Visited 12 Countries</div>
+  <div>Indoor Plants</div>
+  <div>Snowboarding</div>
+  <div>Never Changed Majors</div>
+  <div>Snacking</div>
+  <div>Cleaning</div>
+  <div>Named Every Family Pet</div>
+</div>
 <br>
-<a href="https://pkrosoff.github.io/excelHW/">My Excel Homework</a>
+
+</div>
+<div class="chart"></div>
+
+<div id="contact-pk">
+  <a href="https://www.linkedin.com/in/phoebe-rosoff-9392b1140/" target="_blank">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/pkrosoff" target="_blank">GitHub</a>  &nbsp;&nbsp;&nbsp;&nbsp;
+  <strong><a href="https://www.instagram.com/pheebreezy/?hl=en" target="_blank">Instagram</a></strong> &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="mailto: pkrosoff@gmail.com" target="_blank">Email</a>
+</div>
+<!-- <script src="https://d3js.org/d3.v6.min.js"></script> -->
+<!-- <script src="static/js/tree.js"></script> -->
+
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script type="text/javascript" src="/static/js/tree.js"></script>	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <script type="text/javascript" src="app.js"></script> -->
 </body>
 
 </html>

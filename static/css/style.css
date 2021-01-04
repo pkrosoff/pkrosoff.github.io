@@ -1,0 +1,65 @@
+#header-pk {
+    /* background-color: lightseagreen ; */
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: inherit;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    background: rgb(92, 175, 92);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#body-pk {
+    background: rgb(137, 154, 170);
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    text-indent: 30px;
+
+}
+
+#contact-pk {
+
+    font-style: inherit;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    background: rgb(92, 175, 92);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+/* .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(92, 175, 92) ;
+  } */
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 40px 40px 40px;
+    grid-gap: 10px;
+    background-color: #609775;
+    padding: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+  }
+  #par {
+
+    margin-left: 50px;
+    margin-right: 50px;
+  }
