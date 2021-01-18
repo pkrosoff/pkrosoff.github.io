@@ -142,12 +142,14 @@
 // //   margin = ({top: 10, right: 120, bottom: 10, left: 40});
 // //   d3 = require("d3@6");
 //   })
-diagonal = d3.linkHorizontal().x(d => d.y).y(d => d.x)
-tree = d3.tree().nodeSize([dx, dy])
-margin = ({top: 10, right: 120, bottom: 10, left: 40})
-data = d3.json("tree.json").json()
+var diagonal = d3.linkHorizontal().x(d => d.y).y(d => d.x)
+// var tree = d3.tree().nodeSize([dx, dy])
 
-chart = {
+var margin = ({top: 10, right: 120, bottom: 10, left: 40})
+var data = d3.json("tree.json").json()
+  console.log(data)
+
+
   const root = d3.heirarchy(data);
   root.x0 = dy / 2;
   root.y0 = 0;
@@ -157,7 +159,7 @@ chart = {
     if (d.depth && d.data.name.length !== 7) d.children = null;
   });
 
-  const svg = d3.select(".chart")
+  var svg = d3.select("#svg-area")
       .append("svg")
       .attr("viewBox", [-margin.left, -margin.top, width, dx])
       .style("font", "10px sans-serif")
@@ -265,6 +267,7 @@ chart = {
     });
   }
 
+
   update(root);
 
-  return svg.node();
+  // return svg.node();
