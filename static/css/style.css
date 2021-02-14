@@ -1,5 +1,11 @@
 #header-pk {
     /* background-color: lightseagreen ; */
+
+      background-image: url('../images/DSC_0351 2.JPG');
+
+    background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 25%; 
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: inherit;
@@ -7,12 +13,18 @@
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 30px;
-    background: rgb(92, 175, 92);
+    /* background: rgb(92, 175, 92); */
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 10px;
 }
 #body-pk {
+  /* background-image: url('../images/DSC_0227.JPG');
+  background-repeat: no-repeat; */
+  /* background-attachment: scroll; */
+  /* background-position-x: ; */
+  /* background-attachment: fixed; */
+  background-size: 45% 100%; 
     background: rgb(137, 154, 170);
     border-radius: 30px;
     margin-right: 10px;
